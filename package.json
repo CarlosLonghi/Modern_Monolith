@@ -2,8 +2,9 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "vite": "vite",
         "build": "tsc && vite build && vite build --ssr",
-        "dev": "./vendor/bin/sail npm run dev",
+        "dev": "./vendor/bin/sail npm run vite",
         "sail:start": "./vendor/bin/sail up -d",
         "sail:down": "./vendor/bin/sail down"
     },
