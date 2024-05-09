@@ -64,7 +64,7 @@ export default function UpdatePasswordForm({ className = '' }: { className?: str
                 </div>
 
                 <div>
-                    <InputLabel htmlFor="password" value="Nova Senha" />
+                    <InputLabel htmlFor="password" value="Senha" />
 
                     <TextInput
                         id="password"
