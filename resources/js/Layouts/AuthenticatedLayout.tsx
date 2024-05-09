@@ -35,7 +35,7 @@ export default function Authenticated({ user, header, children }: PropsWithChild
                                         <span className="inline-flex rounded-md">
                                             <button
                                                 type="button"
-                                                className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-zinc-500 dark:text-zinc-400 bg-white dark:bg-zinc-800 hover:text-zinc-700 dark:hover:text-zinc-300 focus:outline-none transition ease-in-out duration-150"
+                                                className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-zinc-500 dark:text-zinc-400 bg-primary-foreground dark:bg-zinc-800 hover:text-zinc-700 dark:hover:text-zinc-300 focus:outline-none transition ease-in-out duration-150"
                                             >
                                                 {user.name}
 
@@ -117,7 +117,7 @@ export default function Authenticated({ user, header, children }: PropsWithChild
             </nav>
 
             {header && (
-                <header className="bg-white dark:bg-zinc-800 shadow">
+                <header className="bg-primary-foreground dark:bg-zinc-800 shadow">
                     <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">{header}</div>
                 </header>
             )}

@@ -9,7 +9,7 @@ export default function Guest({ children }: PropsWithChildren) {
                 <ApplicationLogo className="w-auto h-20 fill-current" />
             </Link>
 
-            <div className="w-full max-w-md px-4 sm:px-6 py-4 bg-card/20 shadow-md overflow-hidden rounded-lg outline outline-primary-foreground outline-1 outline-offset-2">
+            <div className="w-full max-w-md px-4 sm:px-6 py-4 bg-card dark:bg-card/20 shadow-md overflow-hidden rounded-lg outline outline-primary-foreground outline-1 outline-offset-2">
                 {children}
             </div>
         </div>

@@ -13,9 +13,9 @@ export default function Edit({ auth, mustVerifyEmail, status }: PageProps<{ must
         >
             <Head title="Perfil" />
 
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-                    <div className="p-4 sm:p-8 bg-white dark:bg-zinc-800 shadow sm:rounded-lg">
+            <div className="py-8 md:py-12">
+                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 space-y-4 md:space-y-6">
+                    <div className="p-4 sm:p-8 bg-primary-foreground dark:bg-zinc-800 shadow rounded-sm sm:rounded-lg">
                         <UpdateProfileInformationForm
                             mustVerifyEmail={mustVerifyEmail}
                             status={status}
@@ -23,11 +23,11 @@ export default function Edit({ auth, mustVerifyEmail, status }: PageProps<{ must
                         />
                     </div>
 
-                    <div className="p-4 sm:p-8 bg-white dark:bg-zinc-800 shadow sm:rounded-lg">
+                    <div className="p-4 sm:p-8 bg-primary-foreground dark:bg-zinc-800 shadow rounded-sm sm:rounded-lg">
                         <UpdatePasswordForm className="max-w-xl" />
                     </div>
 
-                    <div className="p-4 sm:p-8 bg-white dark:bg-zinc-800 shadow sm:rounded-lg">
+                    <div className="p-4 sm:p-8 bg-primary-foreground dark:bg-zinc-800 shadow rounded-sm sm:rounded-lg">
                         <DeleteUserForm className="max-w-xl" />
                     </div>
                 </div>
