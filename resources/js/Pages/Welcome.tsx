@@ -29,7 +29,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                             <Link
                                                 href={route('login')}
                                             >
-                                                Log in
+                                                Entrar
                                             </Link>
                                         </Button>
 
@@ -37,7 +37,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                             <Link
                                                 href={route('register')}
                                             >
-                                                Register
+                                                Cadastrar
                                             </Link>
                                         </Button>
                                     </div>
@@ -48,23 +48,26 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                         <main className="mt-6">
                             <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
 
-                                <div className="flex items-start gap-4 rounded-lg bg-secondary p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-secondary-foreground dark:ring-background">
-                                    <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                        teste
+                                <div className="flex items-start gap-4 rounded-lg bg-secondary p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 lg:pb-10 dark:bg-secondary-foreground dark:ring-background">
+                                    <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/10 sm:size-16">
+                                        <ApplicationLogo className='fill-primary w-10 h-10' />
                                     </div>
 
                                     <div className="pt-3 sm:pt-5">
-                                        <h2 className="text-xl font-semibold text-black dark:text-white">Vibrant Ecosystem</h2>
+                                        <h2 className="text-xl font-semibold text-primary">Base Laravel</h2>
 
                                         <p className="mt-4 text-sm/relaxed">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis inventore odio soluta sint recusandae voluptatibus non reprehenderit, eos, doloribus id ipsum sit optio consectetur tenetur sequi vero aliquid accusamus nobis placeat. Dolores praesentium voluptatem repudiandae enim temporibus doloremque ipsa, cupiditate, sit nihil nostrum pariatur molestias vel error placeat laboriosam nobis itaque provident excepturi voluptatibus perspiciatis iure esse ut possimus. Iure, nisi nostrum neque vero tempore eos perferendis.
+                                            Base moderna para desenvolvimento web, combinando Laravel no backend e React no frontend. Oferencendo uma estrutura sólida e moderna para criar aplicativos web responsivos e dinâmicos.
+                                        </p>
+                                        <p className="mt-1 text-sm/relaxed">
+                                            No backend, o Laravel fornece uma estrutura MVC robusta e autenticação integrada. E no frontend, o React permite componentização, gerenciamento de estado eficiente e roteamento dinâmico. O projeto inclui ferramentas de desenvolvimento modernas, como Docker, Vite, Inertiajs, Tailwindcss, Shadcn/ui, entre outras. É altamente personalizável e escalável, adequado para uma variedade de aplicativos web.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </main>
 
-                        <footer className="py-16 text-center text-sm text-black dark:text-white/70">
+                        <footer className="py-16 text-center text-sm text-primary-foreground/60">
                             Laravel v{laravelVersion} (PHP v{phpVersion})
                         </footer>
                     </div>

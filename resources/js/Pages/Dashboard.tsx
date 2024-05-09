@@ -13,7 +13,7 @@ export default function Dashboard({ auth }: PageProps) {
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white dark:bg-zinc-800 overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 text-zinc-900 dark:text-zinc-100">You're logged in!</div>
+                        <div className="p-6 text-zinc-900 dark:text-zinc-100">Bem vindo ao painel!</div>
                     </div>
                 </div>
             </div>

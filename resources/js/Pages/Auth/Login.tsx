@@ -45,13 +45,14 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                         autoComplete="username"
                         isFocused={true}
                         onChange={(e) => setData('email', e.target.value)}
+                        required
                     />
 
                     <InputError message={errors.email} className="mt-2" />
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
+                    <InputLabel htmlFor="password" value="Senha" />
 
                     <TextInput
                         id="password"
@@ -61,6 +62,7 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                         className="mt-1 block w-full"
                         autoComplete="current-password"
                         onChange={(e) => setData('password', e.target.value)}
+                        required
                     />
 
                     <InputError message={errors.password} className="mt-2" />
@@ -73,7 +75,7 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                             checked={data.remember}
                             onChange={(e) => setData('remember', e.target.checked)}
                         />
-                        <span className="ms-2 text-sm">Remember me</span>
+                        <span className="ms-2 text-sm">Lembrar</span>
                     </label>
                 </div>
 
@@ -83,13 +85,13 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                             <Link
                                 href={route('password.request')}
                             >
-                                Forgot your password?
+                                Esqueci minha senha.
                             </Link>
                         </Button>
                     )}
 
-                    <Button className="ms-4" disabled={processing}>
-                        Log in
+                    <Button size={'lg'} className="ms-4" disabled={processing}>
+                        Entrar
                     </Button>
                 </div>
             </form>
