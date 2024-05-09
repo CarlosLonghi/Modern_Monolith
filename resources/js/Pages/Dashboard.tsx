@@ -1,6 +1,8 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
+import { GraphicLineChart } from '@/Components/GraphicLineChart';
+import { GraphicPieChart } from '@/Components/GraphicPieChart';
 
 export default function Dashboard({ auth }: PageProps) {
     return (
@@ -12,8 +14,15 @@ export default function Dashboard({ auth }: PageProps) {
 
             <div className="py-12">
                 <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                    <div className="bg-primary-foreground dark:bg-zinc-800 overflow-hidden shadow-sm rounded-sm sm:rounded-lg">
-                        <div className="p-6 text-zinc-900 dark:text-zinc-100">Bem vindo ao painel!</div>
+                    <div className="overflow-hidden space-y-4 shadow-sm">
+                        <h2 className="text-secondary dark:text-primary-foreground">
+                            Bem vindo ao painel!
+                        </h2>
+
+                        <div className="grid grid-cols-9 gap-4">
+                            <GraphicLineChart />
+                            <GraphicPieChart />
+                        </div>
                     </div>
                 </div>
             </div>
